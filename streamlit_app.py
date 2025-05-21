@@ -1,6 +1,10 @@
 import streamlit as st
+import chatbot
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+st.title("Website Q&A Chatbot")
+
+user_input = st.text_input("Ask a question about the website")
+
+if user_input:
+    answer = chatbot.qa.run(user_input)
+    st.write(answer)

@@ -1,1 +1,7 @@
 streamlit
+bs4
+langchain
+langchain-community
+openai
+tiktoken
+faiss-cpu
